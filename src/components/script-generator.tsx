@@ -25,7 +25,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { generateScriptAction } from "@/app/actions";
 import { RocketLoader } from "./rocket-loader";
-import { type GenerateViralScriptOutput } from "@/app/api/generate-viral-script";
+import { type GenerateViralScriptOutput } from "@/ai/flows/generate-viral-script";
 import { cn } from "@/lib/utils";
 import { exportToDocx } from "@/lib/docx-exporter";
 import { FileDown, Copy } from "lucide-react";
@@ -92,7 +92,7 @@ export function ScriptGenerator() {
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
             <CardHeader className="text-center p-8">
-              <CardTitle className="text-3xl font-bold">Stop Mikir Keras, Mulai Klik Cerdas</CardTitle>
+              <CardTitle className="text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Stop Mikir Keras, Mulai Klik Cerdas</CardTitle>
               <CardDescription>Masukkan link produk digitalmu dan dapatkan ide konten viral otomatis!</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
