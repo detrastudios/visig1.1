@@ -10,8 +10,7 @@ export const metadata: Metadata = {
   description: 'Buat script konten affiliate yang viral dengan AI.',
   manifest: '/manifest.json',
   icons: {
-    icon: '/favicon.svg',
-    apple: '/apple-touch-icon.png',
+    apple: '/icons/apple-touch-icon.png',
   },
 };
 
