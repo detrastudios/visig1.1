@@ -8,8 +8,10 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   title: 'Viral Script Generator',
   description: 'Buat script konten affiliate yang viral dengan AI.',
+  manifest: '/manifest.json',
   icons: {
     icon: '/favicon.svg',
+    apple: '/apple-touch-icon.png',
   },
 };
 
