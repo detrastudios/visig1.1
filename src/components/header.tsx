@@ -1,3 +1,4 @@
+
 "use client";
 
 import { ThemeToggle } from '@/components/theme-toggle';
@@ -8,9 +9,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur-sm">
       <div className="container flex h-16 max-w-screen-2xl items-center">
         <a href="/" className="mr-6 flex items-center space-x-3">
-          <div className="bg-primary/20 p-2 rounded-lg">
-            <Logo />
-          </div>
+          <Logo />
           <div>
             <span className="font-bold text-lg leading-none">VISIG</span>
             <p className="text-xs text-muted-foreground leading-none mt-1">
