@@ -1,4 +1,4 @@
-import '@/app/genkit';
+import '@/ai/genkit';
 import createNextRouteHandler from '@genkit-ai/next';
 
 export const dynamic = 'force-dynamic';

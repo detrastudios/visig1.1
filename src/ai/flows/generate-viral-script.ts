@@ -10,7 +10,7 @@
  * - `GenerateViralScriptOutput`: The output type for the `generateViralScript` function.
  */
 
-import {ai} from '@/app/genkit';
+import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 // Define the input schema for the flow
@@ -95,27 +95,7 @@ const generateViralScriptPrompt = ai.definePrompt({
   name: 'generateViralScriptPrompt',
   input: {schema: GenerateViralScriptInputSchema},
   output: {schema: GenerateViralScriptOutputSchema},
-  model: 'googleai/gemini-pro',
-  config: {
-    safetySettings: [
-      {
-        category: 'HARM_CATEGORY_DANGEROUS_CONTENT',
-        threshold: 'BLOCK_NONE',
-      },
-       {
-        category: 'HARM_CATEGORY_HARASSMENT',
-        threshold: 'BLOCK_NONE',
-      },
-       {
-        category: 'HARM_CATEGORY_HATE_SPEECH',
-        threshold: 'BLOCK_NONE',
-      },
-       {
-        category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT',
-        threshold: 'BLOCK_NONE',
-      },
-    ]
-  },
+  model: 'googleai/gemini-1.5-flash-latest',
   prompt: `You are an expert marketing script generator for social media. Your primary goal is to create scripts that are precisely tailored to the user's specified video duration.
 
 You will generate {{{outputCount}}} different script options based on the product link and the following preferences:
